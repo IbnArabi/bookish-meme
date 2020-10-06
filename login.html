@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!---I start and end in the name of Allah--->
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A palce where you can easily get free ebooks">
+        <title>LOGIN | eBook Portal</title>
+    </head>
+    <body>
+        <h1>I'm happy to see you again</h1><a href="sign-up-new-user.html">New User? Sign Up</a><br><br>
+        <form>
+            <input type="email" id="email1" placeholder="Email" required><br><br>
+            <input type="password" id="password1" minlength="8" placeholder="Password"><br>
+            <input type="submit" onclick="run()"><a href="#">Forgot Password?</a>
+        </form>
+        <script>
+            function run() {
+                var email = document.getElementById("email1").value;
+                var password = document.getElementById("password1").value;
+                
+                if (password === "qdsesfvb"){
+                    window.open("books.html");
+                }
+                else if(password === "fhfsdsds"){
+                    window.open("master.html");
+                    console.log("correct 456456324");
+                }
+                else {
+                    alert("Please check again!");
+                    console.log("Incorrect, expiry code 54543453");
+                }
+            }
+        </script>
+    </body>
+</html>
